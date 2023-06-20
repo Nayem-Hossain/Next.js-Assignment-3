@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dom With Form Input</title>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+<!-- 
+
+
+Implement a webpage with a form that has the following fields:
+
+
+a. Name (text input)
+
+
+b. Email (email input)
+
+
+c. Password (password input)
+
+
+d. Confirm Password (password input)
+
+
+e. Submit (button)
+
+
+-->
+
+
+    <section class="container my-5 w-50 border border-1 p-4">
+        <form id="myForm">
+            <h1 class="bg-black text-white p-3 mb-5 rounded-2">JavaScript validation Form</h1>
+            <div class="mb-3">
+                <label for="inputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName" >
+                <!-- for showing js validation -->
+                <div id="inputNameError" class="error text-danger"></div>
+            </div>
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" >
+                <!-- for showing js validation -->
+                <div id="inputEmailError" class="error text-danger"></div>
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword" >
+                <!-- for showing js validation -->
+                <div id="inputPasswordError" class="error text-danger"></div>
+            </div>
+            <div class="mb-3">
+                <label for="confirmInputPassword" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="confirmInputPassword" >
+                <!-- for showing js validation -->
+                <div id="confirmInputPasswordError" class="error text-danger"></div>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </section>
+
+    <script src="/9.JavaScriptDomWithFormInput.js"></script>
+
+    <!-- bootstrap jsdelivr -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
